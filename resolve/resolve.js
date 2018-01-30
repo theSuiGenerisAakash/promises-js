@@ -1,6 +1,6 @@
 require('es6-promise');
 
-const promise = new Promise(((resolve, reject) => {
+const promise = new Promise(((resolve) => {
   // Your solution here
   resolve('hello');
 }));
