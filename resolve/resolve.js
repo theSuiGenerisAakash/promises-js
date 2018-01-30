@@ -5,4 +5,9 @@ const promise = new Promise(((resolve, reject) => {
   resolve('hello');
 }));
 
+// const promise = new Promise(((fulfill, reject) => {
+//   // Your solution here
+//   setTimeout(() => fulfill('FULFILLED!'), 300);
+// })).then(console.log);
+
 module.exports = promise;
