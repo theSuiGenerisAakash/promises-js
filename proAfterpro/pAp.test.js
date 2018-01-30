@@ -15,4 +15,12 @@ describe('testing promise chaining', () => {
     };
     proAfterpro(first, second, cbk);
   });
+  it('passing first and second', (done) => {
+    console.log = jest.fn(console.log);
+    const cbk = () => {
+      expect(console.log).toHaveBeenLastCalledWith('second');
+      done();
+    };
+    proAfterpro(first, second, cbk);
+  });
 });
